@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <div class="brand">
+          <h1><%= title %></h1>
+          <p class="tagline">Usuário criado com sucesso</p>
+        </div>
+        <nav class="nav">
+          <a href="/" class="nav-link">Início</a>
+          <a href="/users/new" class="nav-link">Novo usuário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Pronto!</h2>
+        <p>
+          O usuário <strong><%= nome %></strong> foi registrado com o e-mail
+          <strong><%= email %></strong>.
+        </p>
+        <a class="button" href="/users/new">Adicionar outro</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <small>Feito com <span aria-label="coração">💜</span> e Express + EJS</small>
+      </div>
+    </footer>
+  </body>
+</html>

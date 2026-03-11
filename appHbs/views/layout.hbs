@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span class="brand-logo">🌙</span>
+          <span class="brand-name">Lunar Roxo</span>
+        </div>
+
+        <nav class="topnav">
+          <a href="/" class="topnav-link">Início</a>
+          <a href="/users" class="topnav-link">Usuários</a>
+          <a href="/users/new" class="topnav-link">Novo usuário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-inner">
+        {{{body}}}
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>Feito com <strong>HBS</strong> e Express</span>
+    </footer>
+  </body>
+</html>

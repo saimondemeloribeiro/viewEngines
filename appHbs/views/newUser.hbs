@@ -1,0 +1,16 @@
+<header class="page-header">
+  <h1>{{title}}</h1>
+  <p class="subtitle">Preencha os dados para criar um usuário novo.</p>
+</header>
+
+<section class="card">
+  <form action="/users/create" method="post">
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" required placeholder="Ex: Maria" />
+
+    <label for="email">E-mail</label>
+    <input id="email" name="email" type="email" required placeholder="maria@exemplo.com" />
+
+    <button class="button" type="submit">Salvar usuário</button>
+  </form>
+</section>
